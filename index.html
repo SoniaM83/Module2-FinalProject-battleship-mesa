@@ -3,13 +3,21 @@
     <head>
       <meta charset="UTF-8">
       <title>Battleship</title>
+      <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
         <div id="Game-Info">
-            <p>Turn: <span id-"Turn-Display"></span></p>
-            <p>Info: <span id-"info"></span></p>
+            <p>Turn: <span id="Turn-Display"></span></p>
+            <p>Info: <span id="info"></span></p>
         </div>
         <div id="gameboard-container"></div>
 
+        <div class="option-container"> <!-- different ship sizes/options -->
+            <div class="destroyer-preview destroyer" draggable="true"></div> <!-- destroyer-preview makes ship icon not as large and is 1st class: assigns width & height - destroyer is 2nd class: assigns background color - draggable allows you to drag icon into place -->
+            <div class="submarine-preview submarine" draggable="true"></div> 
+            <div class="cruiser-preview cruiser" draggable="true"></div> 
+            <div class="battleship-preview battleship" draggable="true"></div> 
+            <div class="carrier-preview carrier" draggable="true"></div> <!-- largest ship takes 5 hits/spaces -->
+        </div>
     </body>
 </html>
