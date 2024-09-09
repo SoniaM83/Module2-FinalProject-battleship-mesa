@@ -1,24 +1,36 @@
-
-#gamesboard-container{
+/*MAIN CONTAINER FOR GAMEBOARDS*/
+#gamesboard-container{ 
     width: 500px;
+    height: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*space between containers*/
 }
 
 .game-board{
     width: 200px;
     height: 200px;
-}
+    display: flex; /*stacks horizontally*/
+    flex-wrap: wrap; /*wraps to next line until completed*/
+  }
 
-.option-container{ 
+  .block{  /*adds grid to game boards*/
+    width: 20px;
+    height: 20px;
+    border: solid 1px lightslategray;
+    box-sizing: border-box;
+  }
+
+/*CONTAINER HOLDING SHIP OPTIONS*/
+.option-container{  /*holds ship options*/
     width: 500px;
     height: 65px;
     margin: 30px 0;
-    background-color: yellow;
+    background-color: rgb(160, 249, 249);
     display: flex;
     align-items: center;
 }
 
+/*SHIP STYLES*/
 .destroyer{
     background-color: brown;
 }

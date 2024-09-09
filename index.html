@@ -10,18 +10,22 @@
             <p>Turn: <span id="turn-display"></span></p>
             <p>Info: <span id="info"></span></p>
         </div>
-        <div id="gamesboard-container" style="background-color: pink"></div>
+        <!--MAIN CONTAINER FOR GAME BOARDS-->
+        <div id="gamesboard-container" style="background-color: color"></div>
 
-        <div class="option-container"> <!-- different ship sizes/options -->
+    <!-- DIFFERENT SHIP SIZES/OPTIONS CONTAINER-->
+        <div class="option-container"> 
             <div class="destroyer-preview destroyer" draggable="true"></div> <!-- destroyer-preview is the 1st class: assigns width & height - destroyer is 2nd class: assigns background color (in CSS)- draggable allows you to drag icon into place --><!-- SMALLEST ship 2 hits/spaces -->
             <div class="submarine-preview submarine" draggable="true"></div> <!-- 3 hits/spaces -->
             <div class="cruiser-preview cruiser" draggable="true"></div> <!-- 3 hits/spaces -->
             <div class="battleship-preview battleship" draggable="true"></div> <!-- 4 hits/spaces -->
             <div class="carrier-preview carrier" draggable="true"></div> <!-- largest ship takes 5 hits/spaces -->
         </div>
+    <!--BUTTONS-->
         <button id="flip-button">FLIP</button>
         <button id="start-button">START</button>
 
+    <!--JS FILE-->
         <script src="app.js"></script>
     </body>
 </html>
