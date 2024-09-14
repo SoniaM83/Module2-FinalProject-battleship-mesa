@@ -1,9 +1,20 @@
 html, body{
-    background-color: #778899;
+    background-image: url('https://images.pexels.com/photos/28410516/pexels-photo-28410516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100%;
+    width: 100%;
     margin: 0;
     display: grid;
     place-items: center;
+}
+
+#game-info { /*TURN/INFO TEXT*/
+    font-family:monospace ;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
 }
 
 /*MAIN CONTAINER FOR GAMEBOARDS*/
@@ -12,6 +23,12 @@ html, body{
     height: 200px;
     display: flex;
     justify-content: space-between; /*space between containers*/
+}
+
+#flip-button, #start-button {
+    background-color: rgba(127, 255, 212, 0.352);
+    font-size: 25px;
+    margin: 15px; /*space between containers*/
 }
 
 .game-board{
@@ -26,14 +43,15 @@ html, body{
     height: 20px;
     border: solid 1px #778899;
     box-sizing: border-box;
-  }
+    border-radius: 3px; /*rounded edge on tiles*/
+       }
 
 /*CONTAINER HOLDING SHIP OPTIONS*/
-.option-container{  /*holds ship options*/
+.option-container{  
     width: 500px;
     height: 65px;
     margin: 30px 0;
-    background-color: rgb(160, 249, 249);
+    background-color: rgba(160, 249, 249, 0.489);
     display: flex;
     align-items: center;
 }
