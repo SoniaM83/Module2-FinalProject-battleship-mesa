@@ -1,5 +1,5 @@
 html, body{
-    background-image: url('https://images.pexels.com/photos/28410516/pexels-photo-28410516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-image: url('https://images.pexels.com/photos/28452401/pexels-photo-28452401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,14 +8,24 @@ html, body{
     margin: 0;
     display: grid;
     place-items: center;
+    font-family: 'Press Start 2P';
+}
+
+button {
+    font-family: inherit;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 5px;
+}
+
+#game-title { 
+    font-size: 35px
 }
 
 #game-info { /*TURN/INFO TEXT*/
-    font-family:monospace ;
-    font-size: 25px;
-    font-weight: bold;
-    font-style: italic;
-}
+    font-size: 20px;
+       }
 
 /*MAIN CONTAINER FOR GAMEBOARDS*/
 #gamesboard-container{ 
@@ -36,9 +46,10 @@ html, body{
     height: 200px;
     display: flex; /*stacks horizontally*/
     flex-wrap: wrap; /*wraps to next line until completed*/
+    background-image: url('https://media.istockphoto.com/id/1355902841/photo/blue-water-wave-abstract-or-natural-bubble-texture-gel-soap-background-photography.jpg?s=1024x1024&w=is&k=20&c=LPlpgylY2AQEvpltrAM96P2p-sMppSr2qQukaBzZXG8=');
   }
 
-  .block{  /*adds grid to game boards*/
+.block{  /*adds grid to game boards*/
     width: 20px;
     height: 20px;
     border: solid 1px #778899;
