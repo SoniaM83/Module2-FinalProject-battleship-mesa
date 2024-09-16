@@ -46,7 +46,7 @@ button {
     height: 200px;
     display: flex; /*stacks horizontally*/
     flex-wrap: wrap; /*wraps to next line until completed*/
-    background-image: url('https://media.istockphoto.com/id/1355902841/photo/blue-water-wave-abstract-or-natural-bubble-texture-gel-soap-background-photography.jpg?s=1024x1024&w=is&k=20&c=LPlpgylY2AQEvpltrAM96P2p-sMppSr2qQukaBzZXG8=');
+    background-image: url('https://images.pexels.com/photos/261403/pexels-photo-261403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
   }
 
 .block{  /*adds grid to game boards*/
