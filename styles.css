@@ -47,7 +47,7 @@ button {
     display: flex; /*stacks horizontally*/
     flex-wrap: wrap; /*wraps to next line until completed*/
     background-image: url('https://images.pexels.com/photos/261403/pexels-photo-261403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-  }
+}
 
 .block{  /*adds grid to game boards*/
     width: 20px;
