@@ -12,7 +12,7 @@ html, body{
 }
 
 button {
-    font-family: inherit;
+    font-family: inherit; /*inherits font of the main body*/
     padding-top: 8px;
     padding-bottom: 5px;
     padding-left: 8px;
@@ -46,7 +46,9 @@ button {
     height: 200px;
     display: flex; /*stacks horizontally*/
     flex-wrap: wrap; /*wraps to next line until completed*/
-    background-image: url('https://images.pexels.com/photos/261403/pexels-photo-261403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-image: url('https://images.pexels.com/photos/1435752/pexels-photo-1435752.jpeg?auto=compress&cs=tinysrgb&w=800');
+    background-size: cover; /*fills the container with the image*/
+    background-repeat: no-repeat; /*keeps image from repeating*/
 }
 
 .block{  /*adds grid to game boards*/
