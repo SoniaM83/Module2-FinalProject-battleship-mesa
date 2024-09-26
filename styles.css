@@ -46,15 +46,26 @@ button {
     height: 200px;
     display: flex; /*stacks horizontally*/
     flex-wrap: wrap; /*wraps to next line until completed*/
-    background-image: url('https://images.pexels.com/photos/1435752/pexels-photo-1435752.jpeg?auto=compress&cs=tinysrgb&w=800');
+    position: relative;
+}
+
+.game-board::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/1820041/pexels-photo-1820041.jpeg?auto=compress&cs=tinysrgb&w=800');
     background-size: cover; /*fills the container with the image*/
     background-repeat: no-repeat; /*keeps image from repeating*/
+    opacity: .5; /*transparency*/ 
 }
 
 .block{  /*adds grid to game boards*/
     width: 20px;
     height: 20px;
-    border: solid 1px #778899;
+    border: solid 1px #08090a;
     box-sizing: border-box;
     border-radius: 3px; /*rounded edge on tiles*/
        }
