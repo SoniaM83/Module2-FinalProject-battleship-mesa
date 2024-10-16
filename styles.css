@@ -1,4 +1,4 @@
-html, body{
+body{
     background-image: url('https://images.pexels.com/photos/28452401/pexels-photo-28452401/free-photo-of-scenic-coastal-rocks-in-monterey-bay-ca.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-size: cover;
     background-position: center;
@@ -59,7 +59,7 @@ button {
     background-image: url('https://images.pexels.com/photos/1820041/pexels-photo-1820041.jpeg?auto=compress&cs=tinysrgb&w=800');
     background-size: cover; /*fills the container with the image*/
     background-repeat: no-repeat; /*keeps image from repeating*/
-    opacity: .5; /*transparency*/ 
+    opacity: .5; /*transparency*/
 }
 
 .block{  /*adds grid to game boards*/
@@ -72,8 +72,8 @@ button {
 
 /*CONTAINER HOLDING SHIP OPTIONS*/
 .option-container{  
-    width: 250px;
-    height: 65px;
+    width: 500px;
+    height: 60px;
     margin: 30px 0;
     background-color: rgba(160, 249, 249, 0.489);
     display: flex;
@@ -136,9 +136,9 @@ button {
 }
 
 .boom { /*HIT*/
-    background-color: red; 
+    background-color: red !important; 
 }
 
 .empty { /*MISS*/
-    background-color: lightgray; 
+    background-color: lightgray !important; 
 }
