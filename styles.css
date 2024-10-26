@@ -1,4 +1,4 @@
-body{
+html, body{
     background-image: url('https://images.pexels.com/photos/28452401/pexels-photo-28452401/free-photo-of-scenic-coastal-rocks-in-monterey-bay-ca.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-size: cover;
     background-position: center;
@@ -47,6 +47,7 @@ button {
     display: flex; /*stacks horizontally*/
     flex-wrap: wrap; /*wraps to next line until completed*/
     position: relative;
+    z-index: 1;
 }
 
 .game-board::before {
@@ -59,25 +60,28 @@ button {
     background-image: url('https://images.pexels.com/photos/1820041/pexels-photo-1820041.jpeg?auto=compress&cs=tinysrgb&w=800');
     background-size: cover; /*fills the container with the image*/
     background-repeat: no-repeat; /*keeps image from repeating*/
-    opacity: .5; /*transparency*/
+    opacity: .5; /*transparency */
+    
 }
 
 .block{  /*adds grid to game boards*/
     width: 20px;
     height: 20px;
-    border: solid 1px #08090a;
+    border: solid 1px #464a4e;
     box-sizing: border-box;
     border-radius: 3px; /*rounded edge on tiles*/
-       }
+    z-index: 2;
+}
 
 /*CONTAINER HOLDING SHIP OPTIONS*/
 .option-container{  
-    width: 500px;
-    height: 60px;
+    width: 250px;
+    height: 65px;
     margin: 30px 0;
     background-color: rgba(160, 249, 249, 0.489);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-left: 20px;
 }
 
@@ -134,11 +138,18 @@ button {
 .hover { /*SPACE THAT WILL BE SELECTED*/
     background-color: gray;
 }
+#computer .destroyer,
+#computer .submarine,
+#computer .cruiser,
+#computer .battleship,
+#computer .carrier {
+    background-color: rgba(36, 36, 32, 0);
+}
 
 .boom { /*HIT*/
     background-color: red !important; 
 }
 
 .empty { /*MISS*/
-    background-color: lightgray !important; 
+    background-color: rgb(21, 15, 77) !important; 
 }
