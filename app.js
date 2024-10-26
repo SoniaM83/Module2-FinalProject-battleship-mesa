@@ -1,10 +1,9 @@
 const gamesBoardContainer = document.querySelector('#gamesboard-container');
 const optionContainer = document.querySelector('.option-container');
-const flipButton = document.querySelector('#flip-button');
+const flipButton = document.querySelector('#flip-button'); //BUTTON TO FLIP SHIPS  
 const startButton = document.querySelector('#start-button');
 const infoDisplay = document.querySelector('#info');
 const turnDisplay = document.querySelector('#turn-display');
-/*const randomButton = document.querySelector('#random-button') //RANDOM PLAYER SHIP */
 
 //FLIP/ROTATE OPTIONS BY 90DEGREES
 let angle = 0;
@@ -27,7 +26,7 @@ function createBoard(color, user) {
     const gameBoardContainer = document.createElement('div');
     gameBoardContainer.classList.add('game-board'); //HEIGHT & WIDTH OF GAMEBOARD
     gameBoardContainer.style.backgroundColor = color;
-    gameBoardContainer.id = user;
+    gameBoardContainer.id = user; //SETS ID TO DIFFERENTIATE BETWEEN PLAYER AND COMPUTER BOARDS
         //console.log(gamesBoardContainer);
 
     for (let i = 0; i < width * width; i++) {
@@ -45,8 +44,8 @@ createBoard('', 'computer');
 //SHIPS
 class Ship {
     constructor(name, length){
-        this.name = name;
-        this.length = length;
+        this.name = name; //SHIP NAME
+        this.length = length; //SHIP LENGTH
     }
 }
 
@@ -284,7 +283,7 @@ function checkScore(user, userHits, userSunkShips) { //TO CHECK THE SCORE OF THE
         infoDisplay.textContent = "The computer sunk all of your ships! YOU LOST!";
         gameOver = true;   
     }
-
+//CHECKS IF THE GAME IS OVER
     if (gameOver) {
         infoDisplay.textContent = "GAME OVER!"
     }
