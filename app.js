@@ -237,7 +237,7 @@ function computerGo() {
                   infoDisplay.textContent = 'The enemy missed their shot, your ships are safe!';
                   allBoardBlocks[randomGo].classList.add('empty');// WILL SHOW THAT THE COMPUTER MISSED YOUR SHIPS
             }
-        }, 1000); //3 SECONDS
+        }, 1000); //1 SECOND
 
         setTimeout(() => { //LETS PLAYER KNOW IT'S THEIR TURN
             playerTurn = true;
@@ -245,7 +245,7 @@ function computerGo() {
             infoDisplay.textContent = "Time to strike! Make your selection...";
             const allBoardBlocks = document.querySelectorAll('#computer div'); //CHECKS COMPUTER'S BOARD FOR SHIP PLACEMENT
             allBoardBlocks.forEach(block => block.addEventListener('click', handleClick));
-        }, 1000); //3 SECONDS
+        }, 2000); //2 SECONDS
     }
 }
 //SCORE FUNCTION
@@ -284,7 +284,7 @@ function checkScore(user, userHits, userSunkShips) { //TO CHECK THE SCORE OF THE
         gameOver = true;   
     }
 //CHECKS IF THE GAME IS OVER
-    if (gameOver) {
-        infoDisplay.textContent = "GAME OVER!"
-    }
+   /* if (gameOver) {
+        infoDisplay.textContent = "GAME OVER!" //IF THIS LINE USED, IT WILL NOT DISPLAY WETHER YOU WON OR LOST
+    }*/
 }
